@@ -31,7 +31,8 @@
                         "uri": "https://git.openembedded.org/meta-openembedded"
                     }
                 },
-                "branch": "wrynose"
+                "branch": "wrynose",
+                "rev": "af8b6d6b2f0b11595b0a0d5b82efa3129d52a628"
             }
         },
         "meta-yocto": {
@@ -52,7 +53,8 @@
                         "uri": "https://git.yoctoproject.org/meta-virtualization"
                     }
                 },
-                "branch": "wrynose"
+                "branch": "wrynose",
+                "rev": "30f1a9d7e5ef1b41c64ff4c3c40951133d548ed8"
             }
         },
         "meta-swupdate": {
@@ -62,7 +64,8 @@
                         "uri": "https://github.com/sbabic/meta-swupdate"
                     }
                 },
-                "branch": "wrynose"
+                "branch": "wrynose",
+                "rev": "c0658455606b3a37d85d7cf03703d8b8d2ead667"
             }
         },
         "meta-raspberrypi": {
@@ -72,17 +75,19 @@
                         "uri": "https://git.yoctoproject.org/meta-raspberrypi"
                     }
                 },
-                "branch": "wrynose"
+                "branch": "wrynose",
+                "rev": "f62c67921474370829d24a4fa01ef88543f3906b"
             }
         },
-        "meta-raspberrypi-logan": {
+        "meta-raspberrypi-minicarpet": {
             "git-remote": {
                 "remotes": {
                     "origin": {
-                        "uri": "https://git.yoctoproject.org/meta-raspberrypi-logan"
+                        "uri": "https://github.com/minicarpet/meta-raspberrypi-minicarpet.git"
                     }
                 },
-                "branch": "wrynose"
+                "branch": "wrynose",
+                "rev": "3a4775358dd25eace0113659d09dd542d2874eac"
             }
         },
         "yocto-docs": {
@@ -102,9 +107,9 @@
         {
           "name": "raspberry-pi-4",
           "description": "Configuration for Raspberry Pi 4 Model B",
-          "oe-template": "raspberry-pi",
+          "oe-template": "raspberrypi-minicarpet-raspberry-pi",
           "setup-dir-name": "raspberry-pi-4",
-          "oe-fragments": ["machine/raspberrypi4-64", "distro/raspberry-pi"]
+          "oe-fragments": ["machine/minicarpet-rpi4", "distro/minicarpet"]
         }
       ]
     }
