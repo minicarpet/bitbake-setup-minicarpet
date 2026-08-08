@@ -1,0 +1,111 @@
+{
+    "version": "1.0",
+    "description": "Logan Raspberry Pi Yocto build configuration",
+    "sources": {
+        "bitbake": {
+            "git-remote": {
+                "remotes": {
+                    "origin": {
+                        "uri": "https://git.openembedded.org/bitbake"
+                    }
+                },
+                "branch": "2.18",
+                "rev": "yocto-6.0.2"
+            }
+        },
+        "openembedded-core": {
+            "git-remote": {
+                "remotes": {
+                    "origin": {
+                        "uri": "https://git.openembedded.org/openembedded-core"
+                    }
+                },
+                "branch": "wrynose",
+                "rev": "yocto-6.0.2"
+            }
+        },
+        "meta-openembedded": {
+            "git-remote": {
+                "remotes": {
+                    "origin": {
+                        "uri": "https://git.openembedded.org/meta-openembedded"
+                    }
+                },
+                "branch": "wrynose"
+            }
+        },
+        "meta-yocto": {
+            "git-remote": {
+                "remotes": {
+                    "origin": {
+                        "uri": "https://git.yoctoproject.org/meta-yocto"
+                    }
+                },
+                "branch": "wrynose",
+                "rev": "yocto-6.0.2"
+            }
+        },
+        "meta-virtualization": {
+            "git-remote": {
+                "remotes": {
+                    "origin": {
+                        "uri": "https://git.yoctoproject.org/meta-virtualization"
+                    }
+                },
+                "branch": "wrynose"
+            }
+        },
+        "meta-swupdate": {
+            "git-remote": {
+                "remotes": {
+                    "origin": {
+                        "uri": "https://github.com/sbabic/meta-swupdate"
+                    }
+                },
+                "branch": "wrynose"
+            }
+        },
+        "meta-raspberrypi": {
+            "git-remote": {
+                "remotes": {
+                    "origin": {
+                        "uri": "https://git.yoctoproject.org/meta-raspberrypi"
+                    }
+                },
+                "branch": "wrynose"
+            }
+        },
+        "meta-raspberrypi-logan": {
+            "git-remote": {
+                "remotes": {
+                    "origin": {
+                        "uri": "https://git.yoctoproject.org/meta-raspberrypi-logan"
+                    }
+                },
+                "branch": "wrynose"
+            }
+        },
+        "yocto-docs": {
+            "git-remote": {
+                "branch": "wrynose",
+                "remotes": {
+                    "origin": {
+                        "uri": "https://git.yoctoproject.org/yocto-docs"
+                    }
+                },
+                "rev": "yocto-6.0.2"
+            }
+        }
+    },
+    "bitbake-setup": {
+      "configurations": [
+        {
+          "name": "raspberry-pi-4",
+          "description": "Configuration for Raspberry Pi 4 Model B",
+          "oe-template": "raspberry-pi",
+          "setup-dir-name": "raspberry-pi-4",
+          "oe-fragments": ["machine/raspberrypi4-64", "distro/raspberry-pi"]
+        }
+      ]
+    }
+}
