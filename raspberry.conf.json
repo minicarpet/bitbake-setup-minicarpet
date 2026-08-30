@@ -87,7 +87,7 @@
                     }
                 },
                 "branch": "wrynose",
-                "rev": "3a4775358dd25eace0113659d09dd542d2874eac"
+                "rev": "18c24ddc9543ad9a90e4ae6140574479b3c5bbe1"
             }
         },
         "yocto-docs": {
@@ -109,7 +109,7 @@
           "description": "Configuration for Raspberry Pi 4 Model B",
           "oe-template": "raspberrypi-minicarpet-raspberry-pi",
           "setup-dir-name": "raspberry-pi-4",
-          "oe-fragments": ["machine/minicarpet-rpi4", "distro/minicarpet"]
+          "oe-fragments": ["machine/minicarpet-rpi4", "distro/minicarpet", "raspberrypi-minicarpet/minicarpet/minicarpet"]
         }
       ]
     }
